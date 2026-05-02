@@ -8,39 +8,39 @@ This project focuses on detecting fraudulent financial transactions using a deep
 
 🔍 Detects fraudulent transactions with high recall  
 🧠 Uses 1D CNN for pattern extraction  
-🎯 Incorporates Attention Mechanism for feature importance
-📊 Provides Explainable AI (XAI) using LIME
-⚖️ Handles severely imbalanced dataset effectively
+🎯 Incorporates Attention Mechanism for feature importance  
+📊 Provides Explainable AI (XAI) using LIME  
+⚖️ Handles severely imbalanced dataset effectively  
 
 **📊 Dataset**
 
-Source: PaySim Dataset
-Type: Synthetic financial transaction dataset
-Transactions: ~6.3 million
+Source: PaySim Dataset  
+Type: Synthetic financial transaction dataset  
+Transactions: ~6.3 million  
 
 **🔑 Features**
 
-step – Time step
-type – Transaction type
-amount – Transaction amount
-oldbalanceOrg, newbalanceOrig – Sender balances
-oldbalanceDest, newbalanceDest – Receiver balances
-isFraud – Target variable
+step – Time step  
+type – Transaction type  
+amount – Transaction amount  
+oldbalanceOrg, newbalanceOrig – Sender balances  
+oldbalanceDest, newbalanceDest – Receiver balances  
+isFraud – Target variable  
 
 **⚙️ Methodology**
 
-🔹 Data Preprocessing
-Removed irrelevant columns (nameOrig, nameDest)
-Log transformation on amount
-Feature engineering:
-balance_diff_orig
-balance_diff_dest
-One-hot encoding for transaction type
-Standard scaling
-🔹 Handling Data Imbalance
-Applied class weighting
-Adjusted prediction threshold
-Focused on Recall & F1-score instead of accuracy
+🔹 Data Preprocessing  
+Removed irrelevant columns (nameOrig, nameDest)  
+Log transformation on amount  
+Feature engineering:  
+balance_diff_orig  
+balance_diff_dest  
+One-hot encoding for transaction type  
+Standard scaling  
+🔹 Handling Data Imbalance  
+Applied class weighting  
+Adjusted prediction threshold  
+Focused on Recall & F1-score instead of accuracy  
 
 **🧠 Model Architecture**
 
@@ -58,12 +58,12 @@ Output Layer (Sigmoid)
 
 **📈 Results**
 
-Metric	Value
-Accuracy	0.998
-Precision	0.39
-Recall	0.73
-F1-score	0.51
-ROC-AUC	0.98
+Metric    
+Accuracy: 0.998  
+Precision: 0.39  
+Recall: 0.73  
+F1-score: 0.51  
+ROC-AUC: 0.98  
 
 **🎯 Key Insight**
 
@@ -71,6 +71,6 @@ The model prioritizes high recall, ensuring most fraud cases are detected even a
 
 **🔍 Explainability (LIME)**
 
-Provides local explanations for each prediction
-Identifies which features contributed most to fraud detection
-Improves model transparency and trust
+Provides local explanations for each prediction  
+Identifies which features contributed most to fraud detection  
+Improves model transparency and trust  
