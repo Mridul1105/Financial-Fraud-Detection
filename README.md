@@ -44,16 +44,16 @@ Focused on Recall & F1-score instead of accuracy
 
 **🧠 Model Architecture**
 
-Input Layer
-   ↓
-Conv1D (32 filters) + MaxPooling
-   ↓
-Conv1D (64 filters) + MaxPooling
-   ↓
-Attention Layer
-   ↓
-Dense Layer (64 neurons) + Dropout
-   ↓
+Input Layer  
+   ↓  
+Conv1D (32 filters) + MaxPooling  
+   ↓  
+Conv1D (64 filters) + MaxPooling  
+   ↓  
+Attention Layer  
+   ↓  
+Dense Layer (64 neurons) + Dropout  
+   ↓  
 Output Layer (Sigmoid)
 
 **📈 Results**
