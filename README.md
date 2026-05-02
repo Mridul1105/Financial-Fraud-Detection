@@ -6,8 +6,8 @@ This project focuses on detecting fraudulent financial transactions using a deep
 
 **🚀 Key Features**
 
-🔍 Detects fraudulent transactions with high recall
-🧠 Uses 1D CNN for pattern extraction
+🔍 Detects fraudulent transactions with high recall  
+🧠 Uses 1D CNN for pattern extraction  
 🎯 Incorporates Attention Mechanism for feature importance
 📊 Provides Explainable AI (XAI) using LIME
 ⚖️ Handles severely imbalanced dataset effectively
